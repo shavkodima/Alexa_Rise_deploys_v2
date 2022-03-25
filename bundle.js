@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar modals = function modals(
   \*****************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _img_portfolio_autumn_portfolio_img_1_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../img/portfolio/autumn/portfolio-img (1).png */ \"./src/img/portfolio/autumn/portfolio-img (1).png\");\n\n\nvar getPortfolio = function getPortfolio() {\n  var imgSetting = {\n    autumn: {\n      count: 6,\n      path: 'autumn'\n    },\n    spring: {\n      count: 6,\n      path: \"spring\"\n    },\n    summer: {\n      count: 6,\n      path: \"summer\"\n    },\n    winter: {\n      count: 6,\n      path: \"winter\"\n    }\n  };\n  var navPortfolio = document.querySelectorAll('.button-portfolio');\n  var sectionImg = document.querySelector('.portfolio__view');\n\n  var getPortfolioCategory = function getPortfolioCategory(e) {\n    removeActivCategory();\n    var target = e.target;\n    target.classList.add('activ');\n    getGenerateImg(target.getAttribute('data-aria'));\n  };\n\n  var getGenerateImg = function getGenerateImg(value) {\n    var str = value.toLowerCase();\n    sectionImg.innerHTML = \"\";\n    var listImg = '';\n\n    for (var i = 1; i <= imgSetting[str].count; i++) {\n      listImg += \"\\n                <div class=\\\"portfolio__img\\\">\\n                    <img src='img/portfolio/\".concat(imgSetting[str].path, \"/\").concat(i, \".png' >\\n                </div>\\n            \");\n    }\n\n    sectionImg.insertAdjacentHTML('afterbegin', listImg);\n  };\n\n  var removeActivCategory = function removeActivCategory() {\n    navPortfolio.forEach(function (elem) {\n      return elem.classList.remove('activ');\n    });\n  };\n\n  navPortfolio.forEach(function (elem) {\n    elem.addEventListener('click', getPortfolioCategory);\n  });\n  getGenerateImg('winter');\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (getPortfolio);\n\n//# sourceURL=webpack://alexa-rise/./src/js/portfolio.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar getPortfolio = function getPortfolio() {\n  var imgSetting = {\n    autumn: {\n      count: 6,\n      path: 'autumn'\n    },\n    spring: {\n      count: 6,\n      path: \"spring\"\n    },\n    summer: {\n      count: 6,\n      path: \"summer\"\n    },\n    winter: {\n      count: 6,\n      path: \"winter\"\n    }\n  };\n  var navPortfolio = document.querySelectorAll('.button-portfolio');\n  var sectionImg = document.querySelector('.portfolio__view');\n\n  var getPortfolioCategory = function getPortfolioCategory(e) {\n    removeActivCategory();\n    var target = e.target;\n    target.classList.add('activ');\n    getGenerateImg(target.getAttribute('data-aria'));\n  };\n\n  var getGenerateImg = function getGenerateImg(value) {\n    var str = value.toLowerCase();\n    sectionImg.innerHTML = \"\";\n    var listImg = '';\n\n    for (var i = 1; i <= imgSetting[str].count; i++) {\n      listImg += \"\\n                <div class=\\\"portfolio__img\\\">\\n                    <img src='img/portfolio/\".concat(imgSetting[str].path, \"/\").concat(i, \".png' >\\n                </div>\\n            \");\n    }\n\n    sectionImg.insertAdjacentHTML('afterbegin', listImg);\n  };\n\n  var removeActivCategory = function removeActivCategory() {\n    navPortfolio.forEach(function (elem) {\n      return elem.classList.remove('activ');\n    });\n  };\n\n  navPortfolio.forEach(function (elem) {\n    elem.addEventListener('click', getPortfolioCategory);\n  });\n  getGenerateImg('winter');\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (getPortfolio);\n\n//# sourceURL=webpack://alexa-rise/./src/js/portfolio.js?");
 
 /***/ }),
 
@@ -317,16 +317,6 @@ eval("module.exports = __webpack_require__.p + \"img/sun-hover.svg\";\n\n//# sou
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 eval("module.exports = __webpack_require__.p + \"img/sun.svg\";\n\n//# sourceURL=webpack://alexa-rise/./src/img/icon/sun.svg?");
-
-/***/ }),
-
-/***/ "./src/img/portfolio/autumn/portfolio-img (1).png":
-/*!********************************************************!*\
-  !*** ./src/img/portfolio/autumn/portfolio-img (1).png ***!
-  \********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"img/portfolio-img (1).png\";\n\n//# sourceURL=webpack://alexa-rise/./src/img/portfolio/autumn/portfolio-img_(1).png?");
 
 /***/ })
 
