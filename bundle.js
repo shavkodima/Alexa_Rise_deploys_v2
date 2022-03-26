@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
   \******************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\nvar mobileMenu = function mobileMenu() {\n  var nav = document.querySelector('.navigation');\n  var btnOpen = document.querySelector('.menu-mobile');\n  var btnClose = document.querySelector('.close-mobile');\n  btnOpen.addEventListener('click', function (e) {\n    nav.classList.add('activ');\n  });\n  btnClose.addEventListener('click', function (e) {\n    nav.classList.remove('activ');\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (mobileMenu);\n\n//# sourceURL=webpack://alexa-rise/./src/js/mobileMenu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar mobileMenu = function mobileMenu() {\n  var nav = document.querySelector('.navigation');\n  var btnOpen = document.querySelector('.menu-mobile');\n  var btnClose = document.querySelector('.close-mobile');\n  btnOpen.addEventListener('click', function (e) {\n    nav.classList.add('activ');\n    document.body.style.cssText = ' overflow-y: hidden;';\n  });\n  btnClose.addEventListener('click', function (e) {\n    nav.classList.remove('activ');\n    document.body.style.cssText = '';\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (mobileMenu);\n\n//# sourceURL=webpack://alexa-rise/./src/js/mobileMenu.js?");
 
 /***/ }),
 
